@@ -33,15 +33,3 @@
   text-align: center;
   -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
 }
-
-.tl-left, .tl-right {
-  overflow: hidden;
-}
-
-.tl-left .tl-event-container {
-  float: left;
-}
-
-.tl-right .tl-event-container{
-  float: right;
-}

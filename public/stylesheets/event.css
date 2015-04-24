@@ -1,23 +1,32 @@
 .tl-event-content.btn {
   width: 310px;
   height: 310px;
-  background: url(../img/Pacman1.png) no-repeat;
-  background-size: cover;
   border-radius: 50%;
   box-shadow: 0 5px 0 #4c341b;
   text-align: center;
   padding: 40px;
+  margin: 0 auto;
+}
+
+.tl-left .tl-event-content.btn {
+  background: url(../img/Pacman1.png) no-repeat;
+  background-size: cover;
+}
+
+.tl-right .tl-event-content.btn {
+  background: url(../img/Pacman2.png) no-repeat;
+  background-size: cover;
 }
 
 .tl-event-container {
-  width: 500px;
+  width: 650px;
   height: auto;
   position: relative;
 }
 
 .tl-event-control {
   position: relative;
-  top: 90px;
+  top: 130px;
   height: 65px;
   z-index: 5;
 }
@@ -45,13 +54,20 @@
   float: left;
 }
 
+.tl-left .tl-event-image-container {
+  left: 80px;
+}
+
+.tl-right .tl-event-image-container {
+  left: 120px;
+}
+
 .tl-event-image-container {
   width: 100px;
   height: 100px;
   overflow: hidden;
   position: relative;
   border-radius: 50%;
-  left: 80px;
 }
 
 .tl-event-image-container img {
@@ -70,4 +86,16 @@
   height: 4.5em;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.tl-left, .tl-right {
+  overflow: hidden;
+}
+
+.tl-left .tl-event-container {
+  float: left;
+}
+
+.tl-right .tl-event-container{
+  float: right;
 }

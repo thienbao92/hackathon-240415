@@ -9,6 +9,14 @@ angular.module('myApp.controller',[])
 
 	 })
 })
-.controller('postCtrl',function($scope,$http){
+.controller('postCtrl',function($scope,$http,$state){
 	console.log("Hello");
+	$scope.addData = function(){
+		console.log($scope.submit);
+	$http.post("/event",$scope.submit).success(function(data){
+		console.log(data);
+		$state.go("event");
+	})
+
+	}
 })

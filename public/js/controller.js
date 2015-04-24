@@ -4,7 +4,9 @@ angular.module('myApp.controller',[])
 	console.log("Hello");
 	 $http.get("/event").success(function(response){
 	 	$scope.gets = response;
-	 	console.log("response");
+
+	 	console.log(response);
+
 	 })
 })
 .controller('StudentCtrl',function($scope,$http){

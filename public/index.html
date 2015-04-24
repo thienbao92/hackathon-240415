@@ -50,12 +50,13 @@
     </div>
   </nav>
 
-  <ul class="timeline">
+  <ul class="timeline" ng-controller="StudentCtrl">
     <li>
       <div class="tl-date">Apr 24, 2015</div>
     </li>
 
-    <li class="tl-left">
+    <li class="tl-left" ng-repeat="get in gets">
+
       <div class="tl-event-container">
         <div class="tl-event-control">
           <a href="#" class="btn btn-edit">v</a>
@@ -63,9 +64,11 @@
         </div>
 
         <div class="tl-event-content btn">
-          <div class="tl-event-image-container"><img src="img/coconIT-logo-name.jpg">
+          <div class="tl-event-image-container"><img ng-src="img/coconIT-logo-name.jpg">
           </div>
-          <p class="tl-event-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <p class="tl-event-text">
+          	{{get.content}}
+          </p>
         </div>
       </div>
     </li>

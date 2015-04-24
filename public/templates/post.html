@@ -1,50 +1,18 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!-- title and meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
-
-  <!-- css -->
-  <link rel="stylesheet" type="text/css" href="../stylesheets/event.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-
-  <title>Hackathon</title>
-
-  <!-- js -->
-  <script src="dist/angular.min.js"></script>
-  <script src="dist/bootstrap-3.3.4-dist/css"></script>
-  <script src="dist/bootstrap-3.3.4-dist/fonts"></script>
-  <script src="dist/bootstrap-3.3.4-dist/js/"></script>
-  <script src="dist/jquery-2.1.1.min"></script>
-  <script src="js/service.js"></script>
-  <script src="js/directive.js"></script>
-  <script src="js/controller.js"></script>
-  <script src="js/app.js">
-  </script>
-</head>
-
-<body ng-app="myApp">
-  <div class="post-container" ng-controller="postCtrl">
-    <div class="post-logo"></div>
-    <form class="post-form">
-      <textarea row="8" placeholder="your message" ng-model="submit.content"></textarea>
-      <label>Upload</label>
-      <input type="file" ng-model="submit.image">
-      <button ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
-      </button>
-      <ul class="post-submit-categories">
-        <li><a href="#">Study</a>
-        </li>
-        <li><a href="#">Funny</a>
-        </li>
-        <li><a href="#">Other</a>
-        </li>
-      </ul>
-    </form>
-  </div>
-</body>
-
-</html>
+<div class="post-container" ng-controller="postCtrl">
+  <div class="post-logo"></div>
+  <form class="post-form">
+    <textarea row="8" placeholder="your message" ng-model="submit.content"></textarea>
+    <label>Upload</label>
+    <input type="file" ng-model="submit.image">
+    <button ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
+    </button>
+    <ul class="post-submit-categories">
+      <li><a href="#">Study</a>
+      </li>
+      <li><a href="#">Funny</a>
+      </li>
+      <li><a href="#">Other</a>
+      </li>
+    </ul>
+  </form>
+</div>

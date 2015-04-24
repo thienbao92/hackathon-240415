@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
-var db = mongojs(' mongodb://admin:admin@ds059938.mongolab.com:59938/hackathon2404', ['event']);
+var db = mongojs('mongodb://admin:admin@ds059938.mongolab.com:59938/hackathon2404', ['event']);
 var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + '/public'));

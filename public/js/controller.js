@@ -1,9 +1,9 @@
-angular.module('myApp.controller',[])
+angular.module('myApp.controller',[])	
 
 .controller('StudentCtrl',function($scope,$http){
-	 $http.get("/userpost").success(function(response){
-	 	$scope.posts = response;
-	 	console.log($scope.posts);
+	 $http.get("/event").success(function(response){
+	 	//$scope.gets = response;
+	 	console.log(response);
 	 })
 })
 

@@ -6,7 +6,16 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 
-<body>
+<body ng-app="myApp">
+  <div ng-controller="StudentCtrl">
+
+   <ul ng-repeat ="get in gets">
+     
+        <li>  {{get.content}} </li>
+         <li> {{get.image}} </li> 
+    
+     </ul>
+    </div>     
   <div class="tl-event-container">
     <div class="tl-event-control">
       <a href="#" class="btn btn-edit">v</a>
@@ -19,6 +28,8 @@
       <p class="tl-event-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div>
   </div>
+ 
+
 </body>
 
 </html>

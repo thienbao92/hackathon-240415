@@ -1,44 +1,38 @@
-<!DOCTYPE html>
-<html>
+  <ul class="timeline" ng-controller="StudentCtrl">
+    <li>
+      <div class="tl-date">Apr 24, 2015</div>
+    </li>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/event.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-   <script src="dist/angular.min.js"></script>
-  <script src="dist/bootstrap-3.3.4-dist/css"></script>
-  <script src="dist/bootstrap-3.3.4-dist/fonts"></script>
-  <script src="dist/bootstrap-3.3.4-dist/js/"></script>
-  <script src="dist/jquery-2.1.1.min"></script>
-  <script src="js/service.js"></script>
-  <script src="js/directive.js"></script>
-   <script src="dist/js/controller.js"></script>
-  <script src="dist/js/app.js"> </script>
-</head>
+    <li class="tl-left" ng-repeat="get in gets">
 
-<body ng-app="myApp">
-  <div ng-controller="StudentCtrl">
+      <div class="tl-event-container">
+        <div class="tl-event-control">
+          <a href="#" class="btn btn-edit">v</a>
+          <a href="#" class="btn btn-delete">x</a>
+        </div>
 
-   <ul >
-     
-       
-         <li> {{get.image}} </li> 
-    
-     </ul>
-    </div>     
-  <div class="tl-event-container" ng-repeat ="get in gets">
-    <div class="tl-event-control">
-      <a href="#" class="btn btn-edit">v</a>
-      <a href="#" class="btn btn-delete">x</a>
-    </div>
-
-    <div class="tl-event-content btn">
-      <div class="tl-event-image-container"><img src="../img/coconIT-logo-name.jpg">
+        <div class="tl-event-content btn">
+          <div class="tl-event-image-container"><img ng-src="img/coconIT-logo-name.jpg">
+          </div>
+          <p class="tl-event-text">
+            {{get.content}}
+          </p>
+        </div>
       </div>
-      <p class="tl-event-text">{{get.content}}</p>
-    </div>
-  </div>
- 
+    </li>
 
-</body>
+    <li class="tl-right">
+      <div class="tl-event-container">
+        <div class="tl-event-control">
+          <a href="#" class="btn btn-edit">v</a>
+          <a href="#" class="btn btn-delete">x</a>
+        </div>
 
-</html>
+        <div class="tl-event-content btn">
+          <div class="tl-event-image-container"><img src="img/coconIT-logo-name.jpg">
+          </div>
+          <p class="tl-event-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </div>
+    </li>
+  </ul>

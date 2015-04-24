@@ -1,3 +1,96 @@
+.post-bg {
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
 .post-container {
-  margin: 200px;
+  position: absolute;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50em;
+  border-radius: 20px;
+  padding: 40px;
+  padding-top: 80px;
+  background-color: #0e0e0e;
+}
+
+.post-text-container {
+  position: relative;
+}
+
+.post-container textarea {
+  font: inherit;
+  font-size: 2em;
+  color: #a0d8cf;
+  border-radius: 20px;
+  border: 4px solid #00b493;
+  padding: 25px;
+  width: 75%;
+  resize: none;
+  background-color: #0e0e0e;
+}
+
+.ghost1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 110%;
+}
+
+.post-upload-container {
+  position: relative;
+}
+
+.ghost2 {
+  position: absolute;
+  z-index: 10;
+  left: -10;
+  top: -10px;
+  height: 140%;
+}
+
+.fileUpload {
+  display: block;
+    position: relative;
+    overflow: hidden;
+  padding-left: 120px !important;
+}
+
+.fileUpload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.post-container .btn {
+  background-color: #00b493;
+  margin: 15px 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 0 #004b3b;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #a0d8cf;
+}
+
+.post-submit {
+  float: right;
+}
+
+.post-submit ul.dropdown {
+  background-color: #a0d8cf;
 }

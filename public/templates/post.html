@@ -1,18 +1,31 @@
+<div class="post-bg"></div>
 <div class="post-container" ng-controller="postCtrl">
   <div class="post-logo"></div>
   <form class="post-form">
-    <textarea row="8" placeholder="your message" ng-model="submit.content"></textarea>
-    <label>Upload</label>
-    <input type="file" ng-model="submit.image">
-    <div class="post-submit">
-      <select ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
-        <option><a href="#">Study</a>
-        </option>
-        <option><a href="#">Funny</a>
-        </option>
-        <option><a href="#">Other</a>
-        </option>
-      </select>
+    <div class="post-text-container">
+    <textarea rows="4" placeholder="Your message" ng-model="submit.content"></textarea>
+    <img class="ghost1" src="img/ghost1.png">
+    </div>
+    <div class="post-upload-container">
+    <img class="ghost2" src="img/ghost2.png">
+    <div class="fileUpload btn">
+      <span>Upload</span>
+      <input type="file" ng-model="submit.image">
+    </div>
+    </div>
+
+    <a class="btn">Cancel</a>
+    <div class="post-submit dropdown-cover">
+      <a class="btn" ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
+      </a>
+      <ul class="dropdown">
+        <li><a ng-click="addData()">Study</a>
+        </li>
+        <li><a ng-click="addData()">Funny</a>
+        </li>
+        <li><a ng-click="addData()">Other</a>
+        </li>
+      </ul>
     </div>
   </form>
 </div>

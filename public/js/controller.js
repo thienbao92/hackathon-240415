@@ -9,6 +9,6 @@ angular.module('myApp.controller',[])
 
 	 })
 })
-.controller('StudentCtrl',function($scope,$http){
+.controller('postCtrl',function($scope,$http){
 	console.log("Hello");
 })

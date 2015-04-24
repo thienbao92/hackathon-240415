@@ -11,4 +11,7 @@ angular.module('myApp.controller',[])
 })
 .controller('postCtrl',function($scope,$http){
 	console.log("Hello");
+	$scope.addData = function(){
+		console.log($scope.submit);
+	}
 })

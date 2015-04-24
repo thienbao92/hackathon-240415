@@ -1,5 +1,7 @@
 .navbar-header a.logo {
-  float: left; /* display:block */
+  float: left;
+  /* display:block */
+
   width: 25em;
   height: 4em;
   background-repeat: no-repeat;
@@ -24,4 +26,16 @@
   font-size: 2em;
   color: #a0d8cf;
   background-color: #454545;
+}
+
+.navbar {
+  min-height: 88px;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }

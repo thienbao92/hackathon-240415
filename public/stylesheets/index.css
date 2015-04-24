@@ -1,0 +1,47 @@
+.timeline {
+  position: relative;
+  top: 100px;
+  padding: 0;
+  list-style: outside none none;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.tl-date {
+  display: block;
+  width: 200px;
+  background: #414141;
+  border: 3px solid #212121;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.tl-left, .tl-right {
+  overflow: hidden;
+}
+
+.tl-left .tl-event-container {
+  float: left;
+}
+
+.tl-right .tl-event-container{
+  float: right;
+}

@@ -1,5 +1,7 @@
 angular.module('myApp.controller',[])	
 .controller('StudentCtrl',function($scope,$http,$state){
+	$scope.submit = {
+	};
 	var refresh = function(){
 		$http.get("/event").success(function(response){
 	 	$scope.gets = response;
@@ -10,13 +12,8 @@ angular.module('myApp.controller',[])
 
 	}
 	refresh();
-	console.log("Hello");
-	 $http.get("/event").success(function(response){
-	 	$scope.gets = response;
 
-	 	console.log(response);
-
-	 })
+	
 	 $scope.remove = function(_id){
 	 	console.log(_id);
 	$http.delete('/event/' +_id).success(function(remove){
@@ -33,10 +30,12 @@ angular.module('myApp.controller',[])
 
 	 })
 	}
+	
 	$scope.addData = function(){
 		console.log($scope.submit);
 	$http.post("/event",$scope.submit).success(function(data){
 		console.log(data);
+		refresh();
 		$state.go("event");
 
 	})

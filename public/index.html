@@ -41,53 +41,16 @@
       </div>
 
       <ul class="navbar-right">
-        <li><a href="#" class="btn">Topic</a>
+        <li><a ui-sref="event" class="btn">Topic</a>
         </li>
-        <li><a href="#" class="btn">Create</a>
+        <li><a ui-sref="post" class="btn">Post</a>
         </li>
       </ul>
 
     </div>
   </nav>
 
-  <ul class="timeline" ng-controller="StudentCtrl">
-    <li>
-      <div class="tl-date">Apr 24, 2015</div>
-    </li>
-
-    <li class="tl-left" ng-repeat="get in gets">
-
-      <div class="tl-event-container">
-        <div class="tl-event-control">
-          <a href="#" class="btn btn-edit">v</a>
-          <a href="#" class="btn btn-delete">x</a>
-        </div>
-
-        <div class="tl-event-content btn">
-          <div class="tl-event-image-container"><img ng-src="img/coconIT-logo-name.jpg">
-          </div>
-          <p class="tl-event-text">
-          	{{get.content}}
-          </p>
-        </div>
-      </div>
-    </li>
-
-    <li class="tl-right">
-      <div class="tl-event-container">
-        <div class="tl-event-control">
-          <a href="#" class="btn btn-edit">v</a>
-          <a href="#" class="btn btn-delete">x</a>
-        </div>
-
-        <div class="tl-event-content btn">
-          <div class="tl-event-image-container"><img src="img/coconIT-logo-name.jpg">
-          </div>
-          <p class="tl-event-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        </div>
-      </div>
-    </li>
-  </ul>
+<div ui-view></div>
 
 
   

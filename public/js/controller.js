@@ -1,5 +1,6 @@
 angular.module('myApp.controller',[])	
 .controller('StudentCtrl',function($scope,$http,$state){
+	var date = new Date();
 	$scope.submit = {
 		date: "con cho Khang"
 	};

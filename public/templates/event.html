@@ -1,4 +1,4 @@
-  <ul class="timeline" ng-controller="StudentCtrl">
+  <ul class="timeline">
     <li>
       <div class="tl-date">Apr 24, 2015</div>
     </li>
@@ -7,7 +7,7 @@
 
       <div class="tl-event-container">
         <div class="tl-event-control">
-          <a ng-click="edit()" class="btn btn-edit">v</a>
+          <a ng-click="edit(get._id)" class="btn btn-edit">v</a>
           <a ng-click="remove(get._id)" class="btn btn-delete">x</a>
         </div>
 
@@ -16,7 +16,6 @@
           </div>
           <p class="tl-event-text">
             {{get.content}}
-            {{get._id}}
           </p>
         </div>
       </div>

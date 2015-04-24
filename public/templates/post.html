@@ -1,4 +1,4 @@
-<div class="post-container" ng-controller="postCtrl">
+<div class="post-container">
   <div class="post-logo"></div>
   <form class="post-form">
     <textarea row="8" placeholder="your message" ng-model="submit.content"></textarea>
@@ -13,6 +13,7 @@
         <option><a href="#">Other</a>
         </option>
       </select>
+     <button ng-click="update()">Update</button> 
     </div>
   </form>
 </div>

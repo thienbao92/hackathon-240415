@@ -4,7 +4,6 @@
     </li>
 
     <li ng-class-odd="'tl-left'" ng-class-even="'tl-right'" ng-repeat="get in gets">
-
       <div class="tl-event-container">
         <div class="tl-event-control">
           <a ng-click="remove(get._id)" class="btn btn-delete">x</a>
@@ -16,6 +15,7 @@
           </div>
           <p class="tl-event-text">
             {{get.content}}
+
           </p>
         </div>
       </div>

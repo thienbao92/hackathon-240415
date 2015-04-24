@@ -1,6 +1,7 @@
 angular.module('myApp.controller',[])	
 .controller('StudentCtrl',function($scope,$http,$state){
 	$scope.submit = {
+		date: "con cho Khang"
 	};
 	var refresh = function(){
 		$http.get("/event").success(function(response){
@@ -21,6 +22,7 @@ angular.module('myApp.controller',[])
 		refresh();
 	})
 }
+
 	$scope.edit = function(_id){
 		console.log(_id);
 		$http.get('/event/' +_id).success(function(edit){
@@ -50,5 +52,6 @@ angular.module('myApp.controller',[])
 
 		});
 	}
+
 })
 

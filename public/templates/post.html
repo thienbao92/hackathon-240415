@@ -4,15 +4,17 @@
     <textarea row="8" placeholder="your message" ng-model="submit.content"></textarea>
     <label>Upload</label>
     <input type="file" ng-model="submit.image">
-    <button ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
-    </button>
-    <ul class="post-submit-categories">
-      <li><a href="#">Study</a>
-      </li>
-      <li><a href="#">Funny</a>
-      </li>
-      <li><a href="#">Other</a>
-      </li>
-    </ul>
+    <div class="post-submit">
+      <button ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
+      </button>
+      <ul class="post-submit-categories">
+        <li><a href="#">Study</a>
+        </li>
+        <li><a href="#">Funny</a>
+        </li>
+        <li><a href="#">Other</a>
+        </li>
+      </ul>
+    </div>
   </form>
 </div>

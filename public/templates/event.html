@@ -7,8 +7,8 @@
 
       <div class="tl-event-container">
         <div class="tl-event-control">
-          <a href="#" class="btn btn-edit">v</a>
-          <a href="#" class="btn btn-delete">x</a>
+          <a ng-click="edit()" class="btn btn-edit">v</a>
+          <a ng-click="remove(get._id)" class="btn btn-delete">x</a>
         </div>
 
         <div class="tl-event-content btn">
@@ -16,6 +16,7 @@
           </div>
           <p class="tl-event-text">
             {{get.content}}
+            {{get._id}}
           </p>
         </div>
       </div>
@@ -24,7 +25,7 @@
     <li class="tl-left">
       <div class="tl-event-container">
         <div class="tl-event-control">
-          <a ng-click="remove()" class="btn btn-delete">x</a>
+          <a ng-click="remove(content.id)" class="btn btn-delete">x</a>
           <a ng-click="edit()" class="btn btn-edit">v</a>
         </div>
 
@@ -39,7 +40,7 @@
     <li class="tl-right">
       <div class="tl-event-container">
         <div class="tl-event-control">
-          <a ng-click="remove()" class="btn btn-delete">x</a>
+          <a ng-click="remove(content.id)" class="btn btn-delete">x</a>
           <a ng-click="edit()" class="btn btn-edit">v</a>
         </div>
 

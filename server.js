@@ -28,7 +28,7 @@ app.post('/event', function (req, res) {
 app.delete('/event/:id', function (req, res) {
   var id = req.params.id;
   console.log(id);
-  db.contactlist.remove({_id: mongojs.ObjectId(id)}, function (err, doc) {
+  db.event.remove({_id: mongojs.ObjectId(id)}, function (err, doc) {
     res.json(doc);
   });
 });
@@ -36,7 +36,7 @@ app.delete('/event/:id', function (req, res) {
 app.get('/event/:id', function (req, res) {
   var id = req.params.id;
   console.log(id);
-  db.contactlist.findOne({_id: mongojs.ObjectId(id)}, function (err, doc) {
+  db.event.findOne({_id: mongojs.ObjectId(id)}, function (err, doc) {
     res.json(doc);
   });
 });

@@ -5,16 +5,14 @@
     <label>Upload</label>
     <input type="file" ng-model="submit.image">
     <div class="post-submit">
-      <button ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
-      </button>
-      <ul class="post-submit-categories">
-        <li><a href="#">Study</a>
-        </li>
-        <li><a href="#">Funny</a>
-        </li>
-        <li><a href="#">Other</a>
-        </li>
-      </ul>
+      <select ng-click="addData()">Pac Talk!<span class="post-submit-dropdown">v</span>
+        <option><a href="#">Study</a>
+        </option>
+        <option><a href="#">Funny</a>
+        </option>
+        <option><a href="#">Other</a>
+        </option>
+      </select>
     </div>
   </form>
 </div>

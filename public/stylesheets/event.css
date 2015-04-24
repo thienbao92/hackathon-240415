@@ -17,14 +17,12 @@
 
 .tl-event-control {
   position: relative;
-  float: right;
   top: 90px;
   height: 65px;
   z-index: 5;
 }
 
 .tl-event-control .btn {
-  float: left;
   padding: 10px;
   margin: 0 10px;
   min-width: 40px;
@@ -37,6 +35,14 @@
   vertical-align: middle;
   color: #fff;
   box-shadow: 0 5px 0 #003024;
+}
+
+.tl-left .tl-event-control .btn {
+  float: right;
+}
+
+.tl-right .tl-event-control .btn {
+  float: left;
 }
 
 .tl-event-image-container {

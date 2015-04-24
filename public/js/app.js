@@ -15,7 +15,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	.state('post', {
 		url:'/post',
 		templateUrl: 'templates/post.html'
-	})
+	});
+
+	$urlRouterProvider.otherwise('/event');
 		
 })
 
